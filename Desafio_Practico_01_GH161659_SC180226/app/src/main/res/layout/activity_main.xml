@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -12,7 +13,7 @@
         android:layout_marginTop="120dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-light"
-        android:text="@string/loginHeader"
+        android:text="Crear usuario nuevo"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
@@ -67,9 +68,10 @@
         android:layout_marginTop="32dp"
         app:layout_constraintBottom_toTopOf="@+id/txtNewUser"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-       />
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <Button
         android:id="@+id/btnCreateAccount"
@@ -85,7 +87,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/alreadyHaveAccountLink"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNewPass" />
 
@@ -93,13 +95,14 @@
         android:id="@+id/alreadyHaveAccountLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="80dp"
         android:clickable="true"
         android:minHeight="48dp"
         android:onClick="openLogin"
         android:text="@string/alreadyHaveAccount"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCreateAccount" />
 </android.support.constraint.ConstraintLayout>
