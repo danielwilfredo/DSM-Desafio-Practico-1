@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Desafio_Practico_01_GH161659_</string>
+    <string name="loginHeader">Crear una cuenta nueva</string>
+    <string name="inputUser">Ingrese su usuario</string>
+    <string name="inputPass">Ingrese su contraseña</string>
+    <string name="inputNewUser">Nombre usuario</string>
+    <string name="inputNewPass">Crear contraseña</string>
+    <string name="registrarBtn">Crear Cuenta</string>
+    <string name="loginBtn">Iniciar Sesión</string>
+    <string name="alreadyHaveAccount">Si ya tienes una cuenta, Inicia Sesión aquí</string>
+    <string name="doesntHaveAccount">Crear cuenta nueva</string>
+    <string name="menuName">Menu</string>
+</resources>
