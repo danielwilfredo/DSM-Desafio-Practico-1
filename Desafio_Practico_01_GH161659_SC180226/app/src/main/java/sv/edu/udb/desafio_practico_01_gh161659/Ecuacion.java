@@ -28,28 +28,24 @@ public class Ecuacion extends AppCompatActivity {
                 txt_b.setError(null);
                 txt_c.setError(null);
                 String Validar_a = txt_a.getText().toString();
-                String Validar_b = txt_a.getText().toString();
-                String Validar_c = txt_a.getText().toString();
+                String Validar_b = txt_b.getText().toString();
+                String Validar_c = txt_c.getText().toString();
                 if ("".equals(Validar_a)){
                     txt_a.setError("Introduce un número");
                     txt_a.requestFocus();
                     return;
-
                 }
                 else if ("".equals(Validar_b))
                 {
                     txt_b.setError("Introduce un número");
                     txt_b.requestFocus();
                     return;
-
                 }
                 else if ("".equals(Validar_c)){
                     txt_c.setError("Introduce un número");
                     txt_c.requestFocus();
                     return;
-
                 }
-
                 Integer ValidarNumero = Integer.parseInt(Validar_a);
                 if (ValidarNumero==0){
                     txt_a.setError("El Numero no puede ser Cero");

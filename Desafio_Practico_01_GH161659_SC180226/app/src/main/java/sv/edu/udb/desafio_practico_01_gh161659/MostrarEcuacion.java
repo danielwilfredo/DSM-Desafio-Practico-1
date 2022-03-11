@@ -52,8 +52,8 @@ public class MostrarEcuacion extends AppCompatActivity {
             discriminante = Math.abs(discriminante);
             parteReal = -b / (2 * a);
             parteImaginaria = Math.sqrt(discriminante) / (2 * a);
-            txtSalidaPrimero.setText(parteReal+" + "+ parteImaginaria);
-            txtSalidaSegundo.setText(parteReal+" - "+ parteImaginaria);
+            txtSalidaPrimero.setText(parteReal+" + "+ parteImaginaria + " i");
+            txtSalidaSegundo.setText(parteReal+" - "+ parteImaginaria+ " i");
         }
 
 
@@ -64,6 +64,7 @@ btnRegresar.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
     Intent intent= new Intent(MostrarEcuacion.this,Ecuacion.class);
+        startActivity(intent);
     }
 });
 

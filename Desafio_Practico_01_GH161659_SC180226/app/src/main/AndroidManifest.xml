@@ -10,11 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio_Practico_01_GH161659">
         <activity
-            android:name=".MostrarEcuacion"
-            android:exported="true"
-            />
+            android:name=".MostrarSalario"
+            android:exported="true" />
         <activity
             android:name=".Ecuacion"
+            android:exported="true" />
+        <activity
+            android:name=".MostrarEcuacion"
+            android:exported="true" />
+        <activity
+            android:name=".CalculoPago"
             android:exported="true" />
         <activity
             android:name=".menu"
