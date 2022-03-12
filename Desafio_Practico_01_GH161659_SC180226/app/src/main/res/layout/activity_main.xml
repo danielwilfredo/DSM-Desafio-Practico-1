@@ -4,29 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B2DFDB"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="sans-serif-medium"
         android:text="Crear usuario nuevo"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
 
     <EditText
         android:id="@+id/txtNewUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
         android:width="275dp"
         android:backgroundTint="@color/white"
@@ -39,8 +37,46 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/txtNewPass"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="196dp"
+        android:layout_height="54dp"
+        android:width="250dp"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="NewAccount"
+        android:text="@string/registrarBtn"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <TextView
+        android:id="@+id/alreadyHaveAccountLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="sans-serif-medium"
+        android:minHeight="48dp"
+        android:onClick="openLogin"
+        android:text="@string/alreadyHaveAccount"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
 
     <EditText
         android:id="@+id/txtNewPass"
@@ -55,54 +91,24 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/btnCreateAccount"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNewUser" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="73dp"
-        android:layout_height="74dp"
+        android:layout_width="162dp"
+        android:layout_height="130dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtNewUser"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_add" />
 
-    <Button
-        android:id="@+id/btnCreateAccount"
-        android:layout_width="196dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="32dp"
-        android:width="250dp"
-        android:backgroundTint="@color/white"
-        android:onClick="NewAccount"
-        android:text="@string/registrarBtn"
-        android:textColor="@color/black"
-        android:textColorHighlight="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/alreadyHaveAccountLink"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.376"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNewPass" />
-
-    <TextView
-        android:id="@+id/alreadyHaveAccountLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:clickable="true"
-        android:minHeight="48dp"
-        android:onClick="openLogin"
-        android:text="@string/alreadyHaveAccount"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCreateAccount" />
 </android.support.constraint.ConstraintLayout>

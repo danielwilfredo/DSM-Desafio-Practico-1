@@ -7,7 +7,17 @@
     <string name="inputNewPass">Crear contraseña</string>
     <string name="registrarBtn">Crear Cuenta</string>
     <string name="loginBtn">Iniciar Sesión</string>
-    <string name="alreadyHaveAccount">Si ya tienes una cuenta, Inicia Sesión aquí</string>
-    <string name="doesntHaveAccount">Crear cuenta nueva</string>
+    <string name="alreadyHaveAccount">Click Aqui para ir al Login</string>
+    <string name="doesntHaveAccount">Click Aqui para crear cuenta</string>
     <string name="menuName">Menu</string>
+
+    <string-array name="cargos">
+        <item>-- Seleccionar Cargo --</item>
+        <item>Gerente</item>
+        <item>Asistente</item>
+        <item>Secretaria</item>
+        <item>Cajera</item>
+        <item>Ordenanza</item>
+        <item>Vigilante</item>
+    </string-array>
 </resources>
