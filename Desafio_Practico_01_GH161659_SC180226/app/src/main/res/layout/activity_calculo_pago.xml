@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculo_pago">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtEmpleado1"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Primer Empleado"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtNombre1"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Ingresar Nombre" />
+
+            <EditText
+                android:id="@+id/txtApellido1"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+
+                android:hint="Ingresar Apellidos" />
+
+            <Spinner
+                android:id="@+id/comboCargo1"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:entries="@array/cargos"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/txtHoras1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="number"
+
+                android:hint="Horas Trabajadas" />
+
+            <TextView
+                android:id="@+id/txtEmpleado2"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Segundo Empleado"
+
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtNombre2"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:hint="Ingresar Nombre" />
+
+            <EditText
+                android:id="@+id/txtApellido2"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+
+                android:hint="Ingresar Apellidos" />
+
+            <Spinner
+                android:id="@+id/comboCargo2"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:entries="@array/cargos"
+
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/txtHoras2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="number"
+
+                android:hint="Horas Trabajadas" />
+
+            <TextView
+                android:id="@+id/txtEmpleado3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Tercer Empleado"
+
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtNombre3"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Ingresar Nombre" />
+
+            <EditText
+                android:id="@+id/txtApellido3"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+
+                android:hint="Ingresar Apellidos" />
+
+            <Spinner
+                android:id="@+id/comboCargo3"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:entries="@array/cargos"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/txtHoras3"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Horas Trabajadas" />
+
+            <Button
+                android:id="@+id/btnCalcularSalario"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+
+                android:text="Calcular Salario" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

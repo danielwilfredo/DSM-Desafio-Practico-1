@@ -13,59 +13,81 @@
         android:layout_height="71dp"
         android:background="#F43636"
         android:backgroundTint="#B71C1C"
-        android:onClick="OpenEjercicio3"
+        android:onClick="closeMenu"
         android:text="SALIR"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintVertical_bias="0.703" />
 
     <Button
         android:id="@+id/btnE4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="OpenEjercicio3"
-        android:text="Abrir Ejercicio 3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.359"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnE2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="OpenEjercicio3"
+        android:backgroundTint="#00796B"
+        android:onClick="OpenEjercicio1"
         android:text="Abrir Ejercicio 1"
+        android:textAlignment="center"
+        android:textColor="#F3E5F5"
+        android:textColorHighlight="#0FFFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintVertical_bias="0.273" />
+
+    <Button
+        android:id="@+id/btnE3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00796B"
+        android:onClick="OpenEjercicio3"
+        android:text="Abrir Ejercicio 3"
+        android:textAlignment="center"
+        android:textColor="#EDE7F6"
+        android:textColorHighlight="#0FFFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
 
     <Button
         android:id="@+id/btnE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="OpenEjercicio3"
-        android:text="Abrir Ejercicio 3"
+        android:backgroundTint="#00796B"
+        android:onClick="OpenEjercicio2"
+        android:text="Abrir Ejercicio 2"
+        android:textAlignment="center"
+        android:textColor="#EDE7F6"
+        android:textColorHighlight="#0FFFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376" />
+        app:layout_constraintVertical_bias="0.361" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Daniel Wilfredo Granados Hernández - GH161659"
+        android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -77,7 +99,9 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Luis Magdiel Sanchez - CARNET"
+        android:text="Luis Magdiel Sanchez Cortez - SC180226"
+        android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -87,27 +111,19 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="195dp"
+        android:layout_height="35dp"
+        android:background="#80CBC4"
+        android:fontFamily="sans-serif-medium"
         android:text="Bienvenido al menu"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189" />
-
-    <Button
-        android:id="@+id/btnE3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="OpenEjercicio3"
-        android:text="Abrir Ejercicio 3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
+        app:layout_constraintVertical_bias="0.153" />
 
 </android.support.constraint.ConstraintLayout>

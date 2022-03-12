@@ -12,10 +12,22 @@ public class menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
+    public void OpenEjercicio1(View v)
+    {
+        Intent llamar = new Intent(this, ecuacion.class);
+        startActivity(llamar);
+
+    }
+    public void OpenEjercicio2(View v)
+    {
+        Intent llamar = new Intent(this, Ejercicio3.class);
+        startActivity(llamar);
+
+    }
 
     public void OpenEjercicio3(View v)
     {
-        Intent llamar = new Intent(this, Ejercicio3.class);
+        Intent llamar = new Intent(this, calculo_pago.class);
         startActivity(llamar);
 
     }
